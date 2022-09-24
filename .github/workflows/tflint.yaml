@@ -23,7 +23,7 @@ jobs:
     - name: Init and Run TFLint
       run: |
         tflint --init
-        tflint -f compact
+        tflint
 
     # - name: Run TFLint
     #   run: tflint -f compact
