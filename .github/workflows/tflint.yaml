@@ -24,6 +24,3 @@ jobs:
       run: |
         tflint --init
         tflint --color
-
-    # - name: Run TFLint
-    #   run: tflint -f compact
