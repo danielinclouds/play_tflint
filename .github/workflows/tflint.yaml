@@ -20,8 +20,10 @@ jobs:
     - name: Show version
       run: tflint --version
 
-    - name: Init TFLint
-      run: tflint --init
+    - name: Init and Run TFLint
+      run: |
+        tflint --init
+        tflint -f compact
 
-    - name: Run TFLint
-      run: tflint -f compact
+    # - name: Run TFLint
+    #   run: tflint -f compact
